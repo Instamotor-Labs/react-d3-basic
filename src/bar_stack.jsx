@@ -52,41 +52,42 @@ export default class BarStackChart extends Component {
       showXGrid,
       showYGrid,
       showLegend,
-      categoricalColors
+      categoricalColors,
+      ...rest,
     } = this.props;
 
     var xgrid, ygrid;
 
-    if(showXGrid) xgrid = <Xgrid/>
-    if(showYGrid) ygrid = <Ygrid/>
+    if(showXGrid) xgrid = <Xgrid {...rest} />
+    if(showYGrid) ygrid = <Ygrid {...rest} />
 
     return (
       <div>
         {showLegend?
           <Legend
             {...this.props}
-            width= {width}
-            margins= {margins}
-            chartSeries= {chartSeries}
-            categoricalColors= {categoricalColors}
+            width={width}
+            margins={margins}
+            chartSeries={chartSeries}
+            categoricalColors={categoricalColors}
           />
           : null
         }
         <Chart
           {...this.props}
-          width= {width}
-          height= {height}
-          data= {data}
-          chartSeries= {chartSeries}
-          stack= {true}
+          width={width}
+          height={height}
+          data={data}
+          chartSeries={chartSeries}
+          stack={true}
           >
           <BarStack
-            chartSeries= {chartSeries}
+            chartSeries={chartSeries}
           />
           {xgrid}
           {ygrid}
-          <Xaxis/>
-          <Yaxis/>
+          <Xaxis {...rest} />
+          <Yaxis {...rest} />
           {this.props.children}
         </Chart>
       </div>
