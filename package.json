@@ -49,8 +49,8 @@
   "dependencies": {
     "d3-array": "^0.7.1",
     "d3-scale": "^0.6.4",
-    "react-d3-core": "^1.2.8",
-    "react-d3-shape": "^0.2.13",
+    "react-d3-core": "github:instamotor-labs/react-d3-core",
+    "react-d3-shape": "github:instamotor-labs/react-d3-shape",
     "react-faux-dom": "^2.1.0"
   }
 }
