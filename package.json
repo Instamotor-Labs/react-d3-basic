@@ -16,16 +16,16 @@
   "devDependencies": {
     "babel-cli": "^6.6.4",
     "babel-core": "^6.5.2",
-    "babel-eslint": "^3.1.9",
+    "babel-eslint": "~7.2.3",
     "babel-loader": "^6.2.3",
-    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-add-module-exports": "~0.2.1",
     "babel-plugin-react-transform": "^2.0.0",
-    "babel-plugin-transform-react-remove-prop-types": "^0.2.2",
+    "babel-plugin-transform-react-remove-prop-types": "~0.4.3",
     "babel-plugin-transform-runtime": "^6.5.2",
     "babel-polyfill": "^6.5.0",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
-    "babel-preset-react-hmre": "1.0.1",
+    "babel-preset-react-hmre": "~1.1.1",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.18.0",
     "dsv-loader": "^1.0.0",
@@ -33,24 +33,30 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "json-loader": "^0.5.3",
     "jsx-loader": "^0.13.2",
-    "react-bootstrap": "^0.28.3",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-bootstrap": "~0.31.0",
+    "react-dom": "^15.5.4",
     "react-hot-loader": "^1.3.0",
     "react-router": "^2.0.0",
     "style-loader": "^0.12.4",
     "tapable": "^0.2.4",
+    "webpack": "~1.15.0",
     "webpack-dev-middleware": "^1.5.1",
     "webpack-dev-server": "^1.11.0",
     "webpack-hot-middleware": "^2.9.1"
   },
   "peerDependencies": {
-    "react": ">=0.14.7",
-    "react-dom": ">=0.14.7"
+    "d3": "~3",
+    "prop-types": "15.5.0",
+    "react": ">15.5.0",
+    "react-dom": "15.5.0"
   },
   "dependencies": {
     "d3-array": "^0.7.1",
     "d3-scale": "^0.6.4",
-    "react-d3-core": "github:instamotor-labs/react-d3-core",
-    "react-d3-shape": "github:instamotor-labs/react-d3-shape",
-    "react-faux-dom": "^2.1.0"
+    "react-d3-core": "git://github.com/Instamotor-Labs/react-d3-core",
+    "react-d3-shape": "git://github.com/Instamotor-Labs/react-d3-shape",
+    "react-faux-dom": "~3.1.0"
   }
 }
