@@ -16,7 +16,11 @@ module.exports = {
     publicPath: '/static/'
   },
   resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx']
+    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx'],
+    alias: {
+      'react-d3-core': '@instamotor-labs/react-d3-core',
+      'react-d3-shape': '@instamotor-labs/react-d3-shape'
+    }
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
